@@ -1,0 +1,13 @@
+#!/bin/sh
+
+gcc bits.c -DH=31 -DL=0 -o bits
+./bits
+
+gcc bits.c -DH=31 -DL=31 -o bits
+./bits
+
+gcc bits.c -DH=0  -DL=0 -o bits
+./bits
+
+gcc bits.c -DH=30  -DL=5 -o bits
+./bits
